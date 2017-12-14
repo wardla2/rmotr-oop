@@ -53,6 +53,6 @@ class Bookstore(object):
                 booklist.append(book)
         return booklist
     
-    #b1 = Bookstore()
-    bookstore = create_bookstore(name)
+b1 = Bookstore()
+    #bookstore = create_bookstore(name)
  
