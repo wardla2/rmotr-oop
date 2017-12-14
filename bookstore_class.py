@@ -33,7 +33,7 @@ class Bookstore(object):
         book = { 'id' : self.bookstore['next_book_id'],
              'title' : title,
              'isbn' : isbn,
-             'author' : get_author_by_name(bookstore, author)['name']}
+             'author' : self.get_author_by_name(author)['name']}
         self.bookstore['books'].append(book)
         self.bookstore['next_book_id'] += 1
         return book
@@ -56,4 +56,8 @@ class Bookstore(object):
 b1 = Bookstore('the_bookstore')
 print(b1.get_bookstore_name())
 print(b1.add_author('Elena Ferrante', 'Italy'))
+print(b1.add_book('The Lost Child', '1234', 'Elena Ferrante'))
+print(b1.add_book('My Brilliant Friend', '2345', 'Elena Ferrante'))
+print(b1.get_books_by_author('Elena Ferrante'))
+
 
