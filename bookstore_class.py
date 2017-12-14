@@ -1,6 +1,6 @@
 class Bookstore(object):
     def __init__(self, bookstore):
-    pass
+    self.bookstore = bookstore
     
     def create_bookstore(name):
     return {'bookstore_name': name,
@@ -54,5 +54,5 @@ class Bookstore(object):
     return booklist
     
     b1 = Bookstore()
-    bookstore = create_bookstore()
+    bookstore = create_bookstore(name)
  
