@@ -25,7 +25,7 @@ class Bookstore(object):
     def get_author_by_name(bookstore, name):
         for author in bookstore['authors']:
             if name == author['name']:
-            return author
+                return author
         return None
 
 
@@ -42,7 +42,7 @@ class Bookstore(object):
     def get_book_by_title(bookstore, title):
         for book in bookstore['books']:
             if title == book['title']:
-            return book
+                return book
         return None
 
 
@@ -50,9 +50,9 @@ class Bookstore(object):
         booklist = []
         for book in bookstore['books']:
             if author == book['author']:
-            booklist.append(book)
+                booklist.append(book)
         return booklist
     
-    b1 = Bookstore()
+    #b1 = Bookstore()
     bookstore = create_bookstore(name)
  
